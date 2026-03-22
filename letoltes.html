@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Letöltés - Undertale Magyarul</title>
+    <style>
+        @font-face {
+            font-family: 'Determination';
+            src: url('determination.ttf') format('truetype');
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Determination', 'Courier New', monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 20px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .container { width: 100%; max-width: 800px; text-align: center; }
+
+        h2 { font-size: 3.5rem; color: #ffff00; margin-bottom: 60px; }
+
+        .download-grid {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+
+        /* Alap gomb stílus */
+        .dl-box {
+            border: 6px solid white;
+            padding: 30px;
+            width: 300px;
+            text-decoration: none;
+            color: white;
+            transition: 0.1s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: black;
+        }
+
+        .dl-title { font-size: 2.5rem; margin-bottom: 15px; }
+        .dl-info { font-size: 1.2rem; color: #aaa; }
+
+        /* Aktív Demó gomb */
+        .active-dl:hover {
+            border-color: #ffff00;
+            color: #ffff00;
+            transform: scale(1.05);
+        }
+
+        /* Inaktív Teljes verzió gomb */
+        .disabled-dl {
+            border-color: #444;
+            color: #444;
+            cursor: not-allowed;
+        }
+
+        .coming-soon {
+            color: #ff0000;
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .back-btn {
+            margin-top: 40px;
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 1.8rem;
+            border: 4px solid white;
+            padding: 10px 40px;
+        }
+
+        .back-btn:hover { color: #ffff00; border-color: #ffff00; }
+
+        .warning-text {
+            margin-top: 40px;
+            font-size: 1.2rem;
+            color: #888;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>LETÖLTÉSEK</h2>
+
+        <div class="download-grid">
+            
+            <a href="https://gitea.roberd.me/RudiG111/undertale-magyarul/releases/download/0.2/UndertaleDemoHU.zip" class="dl-box active-dl">
+                <span class="dl-title">DEMÓ</span>
+                <span class="dl-info">Verzió: 1.0.0</span>
+                <span style="color: #00ff00; margin-top: 10px;">LETÖLTÉS MOST</span>
+            </a>
+
+            <div class="dl-box disabled-dl">
+                <span class="dl-title">TELJES</span>
+                <span class="dl-info">Verzió: -.--</span>
+                <span class="coming-soon">HAMAROSAN</span>
+            </div>
+
+        </div>
+        <a href="index.html" class="back-btn">< VISSZA</a>
+    </div>
+
+</body>
+</html>

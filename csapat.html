@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Csapat - Undertale Magyarul</title>
+    <style>
+        @font-face {
+            font-family: 'Determination';
+            src: url('determination.ttf') format('truetype');
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Determination', 'Courier New', monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .container { width: 100%; max-width: 750px; }
+
+        h2 { font-size: 3.5rem; color: #ffff00; text-align: center; margin-bottom: 60px; }
+
+        .team-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .member-card {
+            display: flex;
+            align-items: center;
+            border: 5px solid white;
+            padding: 15px 25px;
+            background: black;
+            transition: 0.1s;
+        }
+
+        .member-card:hover {
+            border-color: #ffff00;
+        }
+
+        /* Csapattag ikonja */
+        .member-icon {
+            width: 60px;
+            height: 60px;
+            margin-right: 25px;
+            image-rendering: pixelated; /* Pixeles élesség megőrzése */
+            object-fit: contain;
+            /* Ha nincs kép, egy szürke keret jelzi a helyét */
+            border: 1px solid #333; 
+        }
+
+        .member-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .name {
+            font-size: 2rem;
+            color: white;
+        }
+
+        .member-card:hover .name {
+            color: #ffff00;
+        }
+
+        .role {
+            font-size: 1.2rem;
+            color: #aaa;
+            margin-top: 5px;
+        }
+
+        .back-btn {
+            margin-top: 60px;
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 1.8rem;
+            border: 4px solid white;
+            padding: 10px 40px;
+        }
+
+        .back-btn:hover { color: #ffff00; border-color: #ffff00; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>A FORDÍTÓ CSAPAT</h2>
+
+        <div class="team-grid">
+            
+            <div class="member-card">
+                <img src="rudyg.png" alt="RudyG" class="member-icon">
+                <div class="member-info">
+                    <span class="name">RudyG</span>
+                    <span class="role">Szövegek</span>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <img src="roberd.png" alt="roberd" class="member-icon">
+                <div class="member-info">
+                    <span class="name">roberd</span>
+                    <span class="role">Szövegek, Textúrák</span>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <img src="aron.png" alt="Áron" class="member-icon">
+                <div class="member-info">
+                    <span class="name">Egy a sok közül (Áron)</span>
+                    <span class="role">Flowey magyar hangja</span>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <img src="kingroli.png" alt="KingroliDEV" class="member-icon">
+                <div class="member-info">
+                    <span class="name">KingroliDEV</span>
+                    <span class="role">Textúrák</span>
+                </div>
+            </div>
+
+        </div>
+
+        <center>
+            <a href="index.html" class="back-btn">< VISSZA</a>
+        </center>
+    </div>
+
+</body>
+</html>
