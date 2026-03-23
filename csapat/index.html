@@ -46,14 +46,12 @@
             border-color: #ffff00;
         }
 
-        /* Csapattag ikonja */
         .member-icon {
             width: 60px;
             height: 60px;
             margin-right: 25px;
-            image-rendering: pixelated; /* Pixeles élesség megőrzése */
+            image-rendering: pixelated;
             object-fit: contain;
-            /* Ha nincs kép, egy szürke keret jelzi a helyét */
             border: 1px solid #333; 
         }
 
@@ -78,6 +76,24 @@
             margin-top: 5px;
         }
 
+        /* YouTube Gomb Stílusa */
+        .yt-btn {
+            background-color: #ff0000;
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            font-size: 1.2rem;
+            border: 3px solid white;
+            transition: 0.1s;
+            margin-left: 15px;
+        }
+
+        .yt-btn:hover {
+            background-color: white;
+            color: #ff0000;
+            border-color: #ff0000;
+        }
+
         .back-btn {
             margin-top: 60px;
             display: inline-block;
@@ -89,6 +105,15 @@
         }
 
         .back-btn:hover { color: #ffff00; border-color: #ffff00; }
+
+        /* Jogi szöveg stílusa */
+        .disclaimer {
+            margin-top: 60px;
+            color: #666;
+            font-size: 0.9rem;
+            text-align: center;
+            text-transform: none;
+        }
     </style>
 </head>
 <body>
@@ -103,6 +128,7 @@
                     <span class="name">RudyG</span>
                     <span class="role">Szövegek</span>
                 </div>
+                <a href="https://www.youtube.com/@RudiG111" target="_blank" class="yt-btn">YOUTUBE</a>
             </div>
 
             <div class="member-card">
@@ -111,6 +137,7 @@
                     <span class="name">roberd</span>
                     <span class="role">Szövegek, Textúrák</span>
                 </div>
+                <a href="https://www.youtube.com/@roberd82-dev" target="_blank" class="yt-btn">YOUTUBE</a>
             </div>
 
             <div class="member-card">
@@ -119,6 +146,7 @@
                     <span class="name">Egy a sok közül (Áron)</span>
                     <span class="role">Virágka magyar hangja</span>
                 </div>
+                <a href="https://www.youtube.com/@Egyasok" target="_blank" class="yt-btn">YOUTUBE</a>
             </div>
 
             <div class="member-card">
@@ -127,6 +155,7 @@
                     <span class="name">KingroliDEV</span>
                     <span class="role">Textúrák</span>
                 </div>
+                <a href="https://www.youtube.com/@MiscEntVids" target="_blank" class="yt-btn">YOUTUBE</a>
             </div>
 
         </div>
@@ -134,6 +163,10 @@
         <center>
             <a href="../" class="back-btn">< VISSZA</a>
         </center>
+
+        <div class="disclaimer">
+            * AZ UNDERTALE™ TOBY FOX VÉDJEGYE. EZ EGY NEM HIVATALOS FORDÍTÁS.
+        </div>
     </div>
 </body>
 </html>
